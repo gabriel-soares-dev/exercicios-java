@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>contatos</servlet-name>
+        <servlet-class>Servlets.contatos</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>salvar</servlet-name>
+        <servlet-class>Servlets.salvar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>listar</servlet-name>
+        <servlet-class>Servlets.listar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>acesso</servlet-name>
+        <servlet-class>Servlets.acesso</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>contatos</servlet-name>
+        <url-pattern>/contatos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>salvar</servlet-name>
+        <url-pattern>/salvar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>listar</servlet-name>
+        <url-pattern>/listar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>acesso</servlet-name>
+        <url-pattern>/acesso</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
