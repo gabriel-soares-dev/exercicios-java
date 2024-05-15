@@ -1,0 +1,7 @@
+POST http://localhost:8080/notes HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Nota de teste",
+    "description": "Teste para o Spring Boot"
+}
