@@ -1,5 +1,17 @@
 import java.util.Scanner
 
+/*
+
+3. **Aplicativo de questionário simples:** 
+Projete um programa que armazene perguntas e respostas de múltipla escolha 
+em uma estrutura de dados (por exemplo, lista ou mapa). 
+
+Created By : Microsoft Copilot
+
+Obs: No final do questionário, deverá exibir ao usuário quantidade respostas corretas e erradas;
+
+*/
+
 data class Questao(val pergunta: String, val opcoes: Map<Char, String>, val respostaCorreta: Char)
 
 fun main() {

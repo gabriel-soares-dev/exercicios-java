@@ -1,5 +1,15 @@
 import java.util.Scanner
 
+/*
+2. **Sistema de recomendação de filmes:** 
+Crie um programa que armazene informações sobre filmes (título, ano, gênero) em arrays. 
+O programa deve permitir ao usuário pesquisar filmes por título ou gênero e exibir as informações relevantes
+
+Created by : Microsoft Copilot 
+
+Obs: Caso não tenha opção para pesquisar, retornará uma mensagem inválida
+*/
+
 fun main() {
     val scanner = Scanner(System.`in`)
     val filmes = arrayOf(

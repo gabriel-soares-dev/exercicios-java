@@ -1,6 +1,13 @@
 import java.util.Scanner
 import kotlin.random.Random
 
+/*
+1. **Calculadora Simples:** 
+Crie uma calculadora básica(+ , -, *, /)
+
+Obs: Caso tenha fora das condições citada, retonará mensagem "Operador inválido"
+*/
+
 fun main() {
     val sc = Scanner(System.`in`)
 
