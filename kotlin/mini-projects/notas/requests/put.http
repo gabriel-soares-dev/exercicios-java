@@ -1,0 +1,7 @@
+PUT http://localhost:8080/notes/2 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Nota de testagem",
+    "description": "Teste para o Spring Boot com kotlin"
+}
