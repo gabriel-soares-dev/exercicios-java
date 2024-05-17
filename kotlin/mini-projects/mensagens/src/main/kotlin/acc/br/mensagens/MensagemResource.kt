@@ -1,9 +1,6 @@
 package acc.br.mensagens
 
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 class MensagemResource(val service: MensagemService){
@@ -15,5 +12,15 @@ class MensagemResource(val service: MensagemService){
     fun post(@RequestBody message:Mensagem){
         service.post(message)
     }
-    
+
+    @PutMapping("{id}")
+    fun put(@PathVariable id: Long, @RequestBody message:Mensagem):Mensagem {
+        return service.put(id, message)
+    }
+
+    @DeleteMapping("{id}")
+    fun delete(@PathVariable id: Long) {
+        service.delete(id)
+    }
+
 }

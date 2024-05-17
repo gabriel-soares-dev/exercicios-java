@@ -11,7 +11,6 @@ import jakarta.persistence.Id
 data class Mensagem(
     @Id
     @GeneratedValue
-    @JsonProperty(value="id", access=JsonProperty.Access.READ_ONLY)
-    val id: Int,
-    val text: String
+    val id: Long = 0L,
+    val text: String = "",
 )

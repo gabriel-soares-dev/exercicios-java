@@ -10,4 +10,18 @@ class MensagemService(val db:MensagemRepository){
     fun post(mensagem:Mensagem){
         db.save(mensagem)
     } 
-}
+
+    fun put(id: Long,mensagem:Mensagem): Mensagem{
+        if (db.existsById(id)){
+            return db.save(mensagem)
+        }
+
+        return Mensagem()
+    }
+
+    fun delete(id: Long){
+        if (db.existsById(id)){
+            db.deleteById(id)
+        }
+    }
+} 
