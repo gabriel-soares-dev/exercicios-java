@@ -1,0 +1,8 @@
+PUT http://localhost:8080/department/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "deptno": 2,
+    "dname": "Bebidas Life",
+    "loc": "BA"
+}
