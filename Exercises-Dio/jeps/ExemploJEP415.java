@@ -14,7 +14,7 @@ public class ExemploJEP415 {
             ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(dadosSerializados));
             MeuObjeto objetoDesserializado = (MeuObjeto) ois.readObject();
             System.out.println("Objeto desserializado: " + objetoDesserializado);
-        } catch (IOException | ClassNotFoundException e) {
+        } catch (Exception e) {
             System.err.println("Erro ao desserializar objeto: " + e.getMessage());
         }
     }
