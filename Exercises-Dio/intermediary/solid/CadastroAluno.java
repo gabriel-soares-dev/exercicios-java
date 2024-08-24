@@ -1,4 +1,9 @@
 // A classe Aluno representa as informações do aluno
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 class Aluno {
     private String nome;
     private String id;

@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 interface NotificacaoEmail {
     void enviarEmail(String mensagem);
@@ -10,14 +11,14 @@ interface NotificacaoSMS {
 class NotificacaoEmailImpl implements NotificacaoEmail {
     @Override
     public void enviarEmail(String mensagem) {
-        System.out.println("Email enviado: %s".formatted(mensagem));
+        System.out.printf("Email enviado: %s",mensagem);
     }
 }
 
 class NotificacaoSMSImpl implements NotificacaoSMS {
     @Override
     public void enviarSMS(String mensagem) {
-        System.out.println("SMS enviado: %s".formatted(mensagem));
+        System.out.printf("SMS enviado: %s",mensagem);
     }
 }
 
