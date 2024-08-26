@@ -30,8 +30,6 @@ public class StreamExample {
 
         System.out.println("\nStates with more of 6 chars");
         filter(list, (s) -> s.length() > 6);
-        
-        //list 
 
         // list iterate with sorting stream
         //list.stream().sorted().forEach(System.out::println);
