@@ -33,5 +33,12 @@ public class StreamExample {
 
         // list iterate with sorting stream
         //list.stream().sorted().forEach(System.out::println);
+
+        //lambda using method reference of own class 
+        list.forEach(StreamExample::myPrint);
+    }
+
+    static void myPrint(String name){
+        System.out.println("Hi, my state is:"+name);
     }
 }
