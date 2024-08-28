@@ -14,9 +14,12 @@ public class Product {
 
     @Override
     public String toString() {
-        double resultPrice= price * (1 - discount);
+        double resultPrice = getPriceWithDiscount();
         return "Product "+name+" and price is "+resultPrice;
     } 
 
+    public Double getPriceWithDiscount(){
+        return price * (1 - discount);
+    } 
     
 }
