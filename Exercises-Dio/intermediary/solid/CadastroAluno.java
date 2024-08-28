@@ -1,3 +1,5 @@
+package solid;
+
 // A classe Aluno representa as informações do aluno
 
 import java.util.ArrayList;

@@ -1,3 +1,5 @@
+package solid;
+
 import java.util.Scanner;
 
 /** LSP: Classe base representando um polígono. */
