@@ -13,8 +13,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UserRepositoryImpl implements UserRepositoryPort{
 	
-	private final UserRepository userRepository;
-	private final ModelMapper modelMapper;
+	private UserRepository userRepository;
+	private ModelMapper modelMapper;
 
 	@Override
 	public User create(User user) {
