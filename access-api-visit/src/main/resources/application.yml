@@ -1,0 +1,14 @@
+spring: 
+  application: 
+    name: access-api-visit
+  datasource: 
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: admin
+    password: admin
+  jpa: 
+    database-platform: org.hibernate.dialect.H2Dialect
+server: 
+  port: 8082
+  h2-console: 
+    enabled: true
