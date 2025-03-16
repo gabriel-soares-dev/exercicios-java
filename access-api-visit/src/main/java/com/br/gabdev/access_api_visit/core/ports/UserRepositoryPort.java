@@ -6,4 +6,6 @@ public interface UserRepositoryPort {
 
 	public User create(User user);
 	
+	public User findByEmail(String email);
+	
 }

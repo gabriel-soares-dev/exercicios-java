@@ -3,15 +3,15 @@ package com.br.gabdev.access_api_visit.core.domain;
 public class Person {
 	
 	private Long id;
-	private String nome;
+	private String name;
 	 
 	public Person() {
 		super();
 	}
 
-	public Person(Long id, String nome) {
+	public Person(Long id, String name) {
 		this.id = id;
-		this.nome = nome;
+		this.name = name;
 	}
 	
 	public Long getId() {
@@ -20,11 +20,11 @@ public class Person {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getNome() {
-		return nome;
+	public String getName() {
+		return name;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	

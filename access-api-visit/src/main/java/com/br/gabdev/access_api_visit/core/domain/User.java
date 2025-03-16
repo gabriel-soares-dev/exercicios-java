@@ -8,20 +8,21 @@ public class User {
 	private String email;
 	private String password;
 	private Boolean isADM;
-	private Long idPerson;
+	private Person person;
 	
 	
 	public User() {
 		super();
 	}
 
-	public User(Long id, String name, String email, String password, Boolean isADM) {
+	public User(Long id, String name, String email, String password, Boolean isADM, Person person) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.password = password;
 		this.isADM = isADM;
+		this.person = person;
 	}
 	
 	public Long getId() {
@@ -54,11 +55,12 @@ public class User {
 	public void setIsADM(Boolean isADM) {
 		this.isADM = isADM;
 	}
-	public Long getIdPerson() {
-		return idPerson;
+	public Person getPerson() {
+		return person;
 	}
-	public void setIdPerson(Long idPerson) {
-		this.idPerson = idPerson;
+
+	public void setPerson(Person person) {
+		this.person = person;
 	}
 	
 }

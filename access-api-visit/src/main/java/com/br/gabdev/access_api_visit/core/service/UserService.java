@@ -14,6 +14,12 @@ public class UserService implements UserServicePort{
 
 	@Override
 	public User createUser(User user) {
+		User userfind = userRepositoryPort.findByEmail(user.getEmail());
+		
+		if (userfind != null) {
+			throw new IllegalArgumentException("User is exists!");
+		}
+		
 		return userRepositoryPort.create(user);
 	}
 
