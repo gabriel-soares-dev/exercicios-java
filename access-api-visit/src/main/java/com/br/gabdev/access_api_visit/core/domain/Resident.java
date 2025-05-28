@@ -6,21 +6,23 @@ public class Resident {
 	private String cpf;
 	private String address;
 	private String cellphone;
-	private Long idPerson;
+	private Person person;
 	
 	public Resident() {
 		super();
 	}
 
-	public Resident(Long id, String cpf, String address, String cellphone, Long idPerson) {
+	
+	
+	public Resident(Long id, String cpf, String address, String cellphone, Person person) {
 		super();
 		this.id = id;
 		this.cpf = cpf;
 		this.address = address;
 		this.cellphone = cellphone;
-		this.idPerson = idPerson;
+		this.person = person;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}
@@ -45,12 +47,13 @@ public class Resident {
 	public void setCellphone(String cellphone) {
 		this.cellphone = cellphone;
 	}
-	public Long getIdPerson() {
-		return idPerson;
+	public Person getPerson() {
+		return person;
 	}
-	public void setIdPerson(Long idPerson) {
-		this.idPerson = idPerson;
+	public void setPerson(Person person) {
+		this.person = person;
 	}
+
 	
 	
 
