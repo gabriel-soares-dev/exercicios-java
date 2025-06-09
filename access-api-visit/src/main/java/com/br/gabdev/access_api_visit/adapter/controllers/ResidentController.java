@@ -15,7 +15,7 @@ import com.br.gabdev.access_api_visit.core.ports.ResidentServicePort;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/api/residents")
+@RequestMapping("/api/resident")
 @RequiredArgsConstructor
 public class ResidentController {
 

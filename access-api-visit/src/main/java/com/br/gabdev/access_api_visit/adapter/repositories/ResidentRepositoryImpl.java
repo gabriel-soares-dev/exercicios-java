@@ -30,7 +30,6 @@ public class ResidentRepositoryImpl implements ResidentRepositoryPort{
 	@Override
 	public Resident findByCpf(String cpf) {
 		ResidentEntity byCpf = residentRepository.findByCpf(cpf);
-		
 		return byCpf == null ? null : modelMapper.map(byCpf, Resident.class);
 	}
 

@@ -3,22 +3,23 @@ package com.br.gabdev.access_api_visit.core.domain;
 public class Visitor {
 	
 	private Long id;
-	private Integer typeDoc;
+	private String typeDoc;
 	private String valueDoc;
-	private Long idPerson;
+	private Person person;
 	
 	
-	public Visitor(Integer typeDoc, String valueDoc, Long idPerson) {
+	public Visitor(Long id, String typeDoc, String valueDoc, Person person) {
 		super();
+		this.id = id;
 		this.typeDoc = typeDoc;
 		this.valueDoc = valueDoc;
-		this.idPerson = idPerson;
+		this.person = person;
 	}
 	
-	public Integer getTypeDoc() {
+	public String getTypeDoc() {
 		return typeDoc;
 	}
-	public void setTypeDoc(Integer typeDoc) {
+	public void setTypeDoc(String typeDoc) {
 		this.typeDoc = typeDoc;
 	}
 	public String getValueDoc() {
@@ -27,12 +28,14 @@ public class Visitor {
 	public void setValueDoc(String valueDoc) {
 		this.valueDoc = valueDoc;
 	}
-	public Long getIdPerson() {
-		return idPerson;
+	public Person getPerson() {
+		return person;
 	}
-	public void setIdPerson(Long idPerson) {
-		this.idPerson = idPerson;
+
+	public void setPerson(Person person) {
+		this.person = person;
 	}
+
 	public Long getId() {
 		return id;
 	}
