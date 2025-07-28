@@ -1,7 +1,8 @@
 @workspace Analise os pacotes e as classes desta aplicação seguindo as etapas do arquivo("prompt_aplicacao.md").
 Além disso:
 
-1- Responda o nome do diagrama mais adequado para representar sua estrutura ou comportamento? (ex: Diagrama de Componentes, Diagrama de Sequência, Diagrama de Implantação, Diagrama de Casos de Uso, Diagrama de Fluxo, etc.).
+1- Responda o nome do diagrama mais adequado para representar sua estrutura ou comportamento? 
+(ex: Diagrama de Componentes, Diagrama de Sequência, Diagrama de Implantação, Diagrama de Casos de Uso, Diagrama de Fluxo, etc.).
 
 2- Por fim, elaborar um prompt com conteúdo de gerar diagrama detalhado que será feito no draw.io
 
